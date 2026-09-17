@@ -1,0 +1,71 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>3D Welding Machine Simulator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="scene"></canvas>
+
+    <div class="title">
+        <h1>3D Welding Machine</h1>
+        <p>Interactive Welding Machine Simulator</p>
+    </div>
+
+    <div class="panel">
+
+        <h2>Control Panel</h2>
+
+        <div class="status">
+            Power:
+            <span id="powerStatus" class="off">OFF</span>
+        </div>
+
+        <label for="current">
+            Welding Current:
+            <strong>
+                <span id="currentValue">100</span>A
+            </strong>
+        </label>
+
+        <input
+            type="range"
+            id="current"
+            min="40"
+            max="250"
+            value="100"
+        >
+
+        <button class="power" id="powerButton">
+            POWER ON
+        </button>
+
+        <button class="weld" id="weldButton">
+            START WELDING
+        </button>
+
+        <button id="resetButton">
+            RESET VIEW
+        </button>
+
+    </div>
+
+    <div class="instructions">
+        🖱️ Drag = Rotate |
+        🖱️ Wheel = Zoom |
+        📱 Touch = Rotate / Pinch Zoom
+    </div>
+
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
+```
